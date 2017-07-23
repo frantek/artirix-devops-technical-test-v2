@@ -5,7 +5,7 @@ resource "aws_elasticsearch_domain" "es" {
     instance_type = "t2.micro.elasticsearch"
 	instance_count = 3
 	dedicated_master_enabled = true
-	dedicated_master_count = 1
+	dedicated_master_count = 2
   }
 
   advanced_options {
