@@ -7,7 +7,7 @@ resource "aws_elasticsearch_domain" "es" {
   domain_name           = "tf-test-deploy"
   elasticsearch_version = "5.3"
   cluster_config {
-    instance_type = "t2.micro.elasticsearch"
+    instance_type = "t2.small.elasticsearch"
 	instance_count = 3
 	dedicated_master_enabled = true
 	dedicated_master_count = 2
