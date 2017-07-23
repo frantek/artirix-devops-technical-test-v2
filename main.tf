@@ -1,3 +1,8 @@
+# Specify the provider and access details
+provider "aws" {
+  region = "${var.aws_region}"
+}
+
 resource "aws_elasticsearch_domain" "es" {
   domain_name           = "tf-test-deploy"
   elasticsearch_version = "5.3"
