@@ -3,6 +3,9 @@ resource "aws_elasticsearch_domain" "es" {
   elasticsearch_version = "5.3"
   cluster_config {
     instance_type = "t2.micro.elasticsearch"
+	instance_count = 3
+	dedicated_master_enabled = true
+	dedicated_master_count = 1
   }
 
   advanced_options {
